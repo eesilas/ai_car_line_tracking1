@@ -1,3 +1,6 @@
+function doSomething () {
+    basic.showIcon(IconNames.Target)
+}
 huskylens.initI2c()
 let x1 = 0
 let x2 = 0
