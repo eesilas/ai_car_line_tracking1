@@ -11,8 +11,10 @@ basic.forever(function () {
         x2 = huskylens.readeArrow(1, Content2.xTarget)
         x1 += huskylens.readeArrow(1, Content2.xOrigin)
         detmine += x2 - x1
-        if (-50 < detmine) {
+        if (-50 > detmine) {
             basic.showIcon(IconNames.Giraffe)
+        } else if (50 < detmine) {
+            basic.showIcon(IconNames.Snake)
         } else {
             basic.showIcon(IconNames.Scissors)
         }
